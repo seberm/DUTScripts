@@ -244,7 +244,7 @@ echo "Configuring test network topology..."
 #
 case $network_topology in
 "{(PP)}")
-	if [[ "kernel" == $P_dataplane ]] && [[ "kernel" == $V_dataplane ]]; then
+	if [[ "kernel" == $P_dataplane ]] && [[ "none" == $V_dataplane ]]; then
 		message="{(PP)}: P_dataplane=kernel, V_dataplane=kernel"
 		
 		#
