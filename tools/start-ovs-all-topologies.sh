@@ -130,8 +130,8 @@
 #
 
 
-prefix="/usr/local" # used with locally built src
-#prefix=""  # used with RPMs
+#prefix="/usr/local" # used with locally built src
+prefix=""  # used with RPMs
 
 vhost="user" # can be user or cuse
 eth_model="82599ES" # use XL710 for 40Gb
