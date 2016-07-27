@@ -137,8 +137,8 @@ vhost="user" # can be user or cuse
 eth_model="82599ES" # use XL710 for 40Gb
 
 export DB_SOCK="$prefix/var/run/openvswitch/db.sock"
-#network_topology="{(PP)}" 
-network_topology="{(PV),(VP)}"
+network_topology="{(PP)}" 
+#network_topology="{(PV),(VP)}"
 #network_topology="{(PV),(VV),(VP)}"
 num_queues_per_port=1
 #cpumask=55
@@ -151,12 +151,15 @@ cpumask=F
 # 3 queues per port.  4 
 #cpumask=555555
 
-P_dataplane=kernel
-#P_dataplane=dpdk
+#P_dataplane=kernel
+P_dataplane=dpdk
+
+
+
 #P_dataplane=none
-V_dataplane=kernel
+#V_dataplane=kernel
 #V_dataplane=dpdk
-#V_dataplane=none
+V_dataplane=none
 
 dev1=p2p1
 dev2=p2p2
