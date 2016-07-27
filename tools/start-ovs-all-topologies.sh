@@ -158,8 +158,8 @@ V_dataplane=kernel
 #V_dataplane=dpdk
 #V_dataplane=none
 
-dev1=p2p1
-dev2=p2p2
+dev1=ens1f0
+dev2=ens1f1
 #dev1=em2
 #dev2=em2
 
